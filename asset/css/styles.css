@@ -1,0 +1,481 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+    background: rgb(143, 187, 216);
+    display: grid;
+    grid-template-areas: 'head'
+                        'conten'
+                        'footer';
+    justify-items:center ;
+
+    row-gap: 45px;
+    
+}
+
+.head{
+    display: grid;
+    grid-area: 'head';
+justify-items: center;    
+    width: 100%;
+    background: rgb(223, 223, 223);
+   position: relative;
+
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+
+}
+
+.sec_logo{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+    padding: 10px;
+}
+.logo{
+    width: 150px;
+    padding: 10px;
+    
+}
+.title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 60px;
+    padding: 10px;
+    color: crimson;
+    text-shadow: 0px 2px 1px rgb(53, 53, 53);
+}
+
+
+.menu > nav{
+    background: black;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0px 4px 1px rgb(43, 123, 228);
+    
+}
+
+
+.menu > nav >ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    align-content: center;
+    border-radius: 3px;
+   
+}
+
+.menu > nav >ul>li {
+    padding: 20px 0px 20px 0px;
+    margin: 0px;
+    width: auto;
+     border-radius: 3px;
+
+    
+ 
+}
+
+
+.menu > nav >ul>li>a {
+    
+    background: rgb(16, 17, 17);
+    color: white;
+ 
+    padding: 20px;
+}
+
+/* contenido */
+
+.wrap{
+    display: grid;
+    grid-area: 'conten';
+    grid-template-columns: 25% 72% ;
+    
+    
+    
+    grid-column-gap: 3%;
+    
+    width: 90%;
+    margin-bottom: 50px;
+}
+
+
+/*aside*/
+
+aside{
+    display: grid;
+    grid-area: 'aside';
+    
+    align-content: flex-start;
+    
+}
+
+aside >.contenido{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+}
+
+aside >.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    
+}
+
+
+.contenido >.login>form{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    padding: 5px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.contenido >section{
+    display: flex;
+    flex-direction: column;
+    width:90%;
+    padding: 5px;
+    margin-bottom: 20px;
+    
+}
+
+.contenido>.login>form >input{
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    border:none;
+    border-bottom: 1px solid lightseagreen;
+    width: 70%;
+
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    
+   
+    
+}
+
+.contenido>.login>form >button{
+   
+    padding:5px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 50%;
+}
+
+.contenido>.login>section{
+   
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+/*articulos*/
+
+.producto>img{
+    width: 100px;
+
+}
+
+.principal{
+    display: grid;
+    grid-area: 'productos';
+    grid-template-areas: 'titulo'
+                        'producto';
+    justify-items: center;
+}
+
+
+.productos{
+    display: grid;
+    grid-area: 'producto';
+   grid-template-columns: 1fr 1fr 1fr;
+   column-gap: 40px;
+   row-gap: 30px;
+
+
+   
+}
+.principal>h2{
+    grid-area: 'titulo';
+    margin-bottom:30px ;
+    width: 90%;
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+
+
+.producto {
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+
+
+
+
+.producto>img,.producto>h2,.producto>p{
+  padding: 5px;
+}
+
+
+/*foooter*/
+
+footer{
+    display: grid;
+
+    grid-area: 'footer';
+    width: 100%;
+    padding: 25px 0px 25px 0px;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+.bienvenido{
+    width: 100%;
+    background:rgb(143, 187, 216);
+    margin-bottom: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 17px;
+    box-shadow: 0px 3px 1px rgb(43, 123, 228);
+}
+
+/*categorias tabla*/
+.sec_table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+table{
+    width:60%;
+    margin: 0px;
+    padding: 0px;
+}
+th,td{
+    text-align: center;
+    padding: 10px;
+}
+
+th{
+    background: brown;
+    color: blanchedalmond;
+   font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button_crear{
+    margin-top: 30px;
+    padding: 10px;
+    background: rgb(26, 110, 26);
+    color: honeydew;
+    text-align: center;
+    border: none;
+}
+
+.input_crear{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 60%;
+}
+
+.sec_titulo{
+ 
+        grid-area: 'titulo';
+        margin-bottom:30px ;
+        width: 90%;
+        border-bottom: 1px solid black;
+        text-align: center;
+    
+}
+.button_editar{
+    background: royalblue;
+    color: white;
+    padding: 8px;
+    border-radius: 2px;
+    width: auto;
+}
+.editar{
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.button_eliminar{
+    
+    background: red;
+    padding: 8px;
+    color: white;
+    border-radius: 2px;
+    width: auto;
+    margin-left: 3px;
+}
+
+.preview_image{
+    width: 200px;
+}
+
+
+.nombre_producto{
+    font-size: 20px;
+    background: none;
+    color: rgb(6, 86, 133);
+
+
+}
+
+.imagen_producto{
+   height: 150px;
+   width: auto;
+}
+
+.button_comprar{
+
+  
+        width: 100%;
+        text-align: center;
+        color: white;
+        background: rgb(34, 131, 34);
+        padding: 5px 0px 5px 0px;
+        border-radius: 3px;
+    
+
+}
+
+
+.detalle{
+    display: flex;
+    flex-direction: row;
+}
+
+.producto_nombre{
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+   text-shadow: 2px 3px 2px rgb(184, 17, 17);
+   font-size: 30px;
+}
+
+.producto_descripcion{
+    color: rgb(29, 121, 182);
+    margin-bottom: 20px;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+}
+
+.producto_precio{
+    color: red;
+    margin-bottom: 20px;
+   
+    font-size: 30px;
+    
+}
+
+.producto_oferta{
+    color: rgb(66, 69, 70);
+    margin-bottom: 20px;
+   
+    font-size: 20px;
+    
+}
+
+
+
+.comprar{
+    background: green;
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 15px;
+    text-align:center;
+    
+}
+
+.producto_img{
+    width: 350px;
+    margin-right: 20px;
+    justify-items: center;
+}
+
+.producto_img_carrito{
+    height: 200px;
+    margin-right: 20px;
+    justify-items: center;
+}
+
+
+.producto_img>img{
+    width: 90%;
+    
+}
+.carrito{
+    width: 90%;
+}
+
+.pago{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end ;
+}
+
+.comprar_carrito{
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+    width: 15%;
+    padding: 10px;
+    color: white;
+    background: rgb(34, 131, 34);
+}
+
+.info_pedido{
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+}
+
+.sub_titulo{
+    font-size: 18px;
+    color: brown;
+}
+#sel{
+    width: 60%;
+  
+    padding: 10px;
+}
